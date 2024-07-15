@@ -62,8 +62,7 @@ export default function RootLayout({
           async
           strategy="afterInteractive"
           id="google-ads"
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3776330853847527"
+          src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
         />
         {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TKHE64ET5C"
@@ -81,12 +80,12 @@ export default function RootLayout({
         <LoadingWrapper />
         {children}
         <Footer />
-        {/* <ClientWrapper>
+        <ClientWrapper>
           <>
             <InterstitialAd />
             <AnchorAd />
           </>
-        </ClientWrapper> */}
+        </ClientWrapper>
       </body>
     </html>
   );
