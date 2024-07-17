@@ -69,6 +69,44 @@ export const Ad5 = () => {
   );
 };
 
+export const Ad6 = () => {
+  const adData = useAdState((state) => state.adCode);
+  return (
+    <ClientWrapper>
+      <AdsWrapper
+        id={adData[8].id}
+        label={adData[8].label}
+        size={adData[8].size}
+      />
+    </ClientWrapper>
+  );
+};
+
+export const Ad7 = () => {
+  const adData = useAdState((state) => state.adCode);
+  return (
+    <ClientWrapper>
+      <AdsWrapper
+        id={adData[9].id}
+        label={adData[9].label}
+        size={adData[9].size}
+      />
+    </ClientWrapper>
+  );
+};
+
+export const Ad8 = () => {
+  const adData = useAdState((state) => state.adCode);
+  return (
+    <ClientWrapper>
+      <AdsWrapper
+        id={adData[10].id}
+        label={adData[10].label}
+        size={adData[10].size}
+      />
+    </ClientWrapper>
+  );
+};
 
 export const SmallAd = () => {
   const adData = useAdState((state) => state.adCode);

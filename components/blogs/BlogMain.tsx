@@ -7,7 +7,7 @@ import { blog } from "@prisma/client";
 
 import Image from "next/image";
 
-import { Ad1, Ad2, Ad3, Ad5 } from "@/components/ads/ads";
+import { Ad1, Ad2, Ad3, Ad5, Ad6, Ad7, Ad8 } from "@/components/ads/ads";
 import { MiddleArticleBlogs } from "@/components/etc/middle-article-blogs";
 import { Separator } from "@/components/ui/separator";
 
@@ -20,8 +20,6 @@ interface blogUser extends blog {
 }
 
 const BlogMain = ({ blog, link }: { blog: blogUser; link: string }) => {
-  const blogHeadings = blog.blog.filter((b: any) => b.type === "header");
-
   const BlogGen = dynamic(() => import("@/components/blogs/BlogGen"), {
     ssr: false,
   });
@@ -46,10 +44,26 @@ const BlogMain = ({ blog, link }: { blog: blogUser; link: string }) => {
     data: Ad1,
   };
 
-  blog.blog.splice(4, 0, adElement4);
-  blog.blog.splice(10, 0, adElement2);
-  blog.blog.splice(7, 0, adElement3);
-  blog.blog.splice(12, 0, adElement5);
+  const adElement6 = {
+    type: "Ad",
+    data: Ad6,
+  };
+  const adElement7 = {
+    type: "Ad",
+    data: Ad7,
+  };
+  const adElement8 = {
+    type: "Ad",
+    data: Ad8,
+  };
+
+  blog.blog.splice(1, 0, adElement4);
+  blog.blog.splice(4, 0, adElement3);
+  blog.blog.splice(7, 0, adElement2);
+  blog.blog.splice(10, 0, adElement5);
+  blog.blog.splice(12, 0, adElement6);
+  blog.blog.splice(15, 0, adElement7);
+  blog.blog.splice(18, 0, adElement8);
 
   return (
     <article className="flex flex-col w-full">

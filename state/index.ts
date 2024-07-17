@@ -67,6 +67,21 @@ export const useAdState = create<useAdStateProp>((set) => ({
       id: "div-gpt-ad-1721043480545-0",
       size: [336, 280],
     },
+    {
+      label: "/22989548286/7_336X280",
+      id: "div-gpt-ad-1721197747164-0",
+      size: [336, 280],
+    },
+    {
+      label: "/22989548286/8_336X280",
+      id: "div-gpt-ad-1721197971333-0",
+      size: [336, 280],
+    },
+    {
+      label: "/22989548286/9_336X280",
+      id: "div-gpt-ad-1721198092934-0",
+      size: [336, 280],
+    },
   ],
   setAdCode: (code) => set({ adCode: code }),
 }));
