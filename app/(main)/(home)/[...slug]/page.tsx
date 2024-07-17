@@ -19,6 +19,8 @@ import Pagination from "@/components/etc/Pagination";
 import AbPage from "@/components/views/ab-page";
 import CPage from "@/components/views/c-page";
 
+export const revalidate = 0;
+
 const slugPage = async ({ params }: { params: { slug: string[] } }) => {
   const params1 = params.slug[0];
   const page = parseInt(params.slug[1] || "1");

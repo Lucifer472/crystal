@@ -1,2 +1,6 @@
 google.com, pub-1438215321080661, DIRECT, f08c47fec0942fa0
+<<<<<<< HEAD
 google.com, pub-1438215321080661, DIRECT, f08c47fec0942fa0
+=======
+google.com, pub-1438215321080661, DIRECT, f08c47fec0942fa0
+>>>>>>> 8168ea1 (asd)
